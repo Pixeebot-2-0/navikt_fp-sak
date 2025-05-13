@@ -147,7 +147,7 @@ class BehandlingDtoTjenesteTest {
     }
 
     private Boolean routeExists(ResourceLink dtoLink, Collection<ResourceLink> routes) {
-        if (dtoLink.getRel().equals("simuleringResultat")) {
+        if ("simuleringResultat".equals(dtoLink.getRel())) {
             return true;
         }
         for (var routeLink : routes) {
